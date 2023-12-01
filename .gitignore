@@ -2,6 +2,7 @@
 
 # python
 .venv
+__pycache__
 
 # rust
 target

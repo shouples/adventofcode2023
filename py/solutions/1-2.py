@@ -55,17 +55,20 @@ def get_first_and_last_digits_with_conversion(line: str) -> int:
 
 
 @timer
-def solve(inputs) -> None:
-    values: list[int] = [
-        get_first_and_last_digits_with_conversion(line) for line in inputs
-    ]
-    print(sum(values))
+def solve(inputs: list[str]) -> None:
+    values: list[int] = [get_first_and_last_digits_with_conversion(line) for line in inputs]
+    solution = sum(values)
+    print(f"{solution=}")
 
 
-def run():
-    # load input
-    inputs = open("../inputs/1.txt").readlines()
-    # process the solution
+@timer
+def load_input() -> list[str]:
+    return open("../inputs/1.txt").readlines()
+
+
+@timer
+def run() -> None:
+    inputs: list[str] = load_input()
     solve(inputs)
 
 

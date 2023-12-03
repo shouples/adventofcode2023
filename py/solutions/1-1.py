@@ -24,16 +24,21 @@ def get_first_and_last_digits(line: str) -> int:
 
 
 @timer
-def solve(inputs) -> None:
+def solve(inputs: list[str]) -> int:
     values: list[int] = [get_first_and_last_digits(line) for line in inputs]
-    print(sum(values))
+    return sum(values)
 
 
-def run():
-    # load input
-    inputs = open("../inputs/1.txt").readlines()
-    # process the solution
-    solve(inputs)
+@timer
+def load_input() -> list[str]:
+    return open("../inputs/1.txt").readlines()
+
+
+@timer
+def run() -> None:
+    inputs: list[str] = load_input()
+    solution = solve(inputs)
+    print(f"{solution=}")
 
 
 if __name__ == "__main__":

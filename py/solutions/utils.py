@@ -8,7 +8,7 @@ def timer(func):
         start = datetime.now()
         result = func(*args, **kwargs)
         duration = (datetime.now() - start).total_seconds()
-        print(f"`{func.__name__}` time: {duration}sec")
+        print(f"`{func.__name__}` time: {duration:.6f}sec")
         return result
 
     return wrapper

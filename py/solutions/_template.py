@@ -9,7 +9,7 @@ def solve(inputs: list[str]) -> int:
 
 @timer
 def load_input() -> list[str]:
-    """Read from an input file, handle any preprocessing, return a list of strings."""
+    """Read from an input file and handle any preprocessing."""
     pass
 
 

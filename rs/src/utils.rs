@@ -1,9 +1,10 @@
 #[macro_export]
 macro_rules! timer {
-    ($x:expr) => {{
+    ($func_name:expr, $func_call:expr) => {{
         let start = std::time::Instant::now();
-        let result = $x;
+        let result = $func_call;
         let duration = start.elapsed();
-        println!("Time: {:.6}sec", duration.as_secs_f64());
+        println!("`{}` time: {:.6} sec", $func_name, duration.as_secs_f64());
+        result
     }};
 }

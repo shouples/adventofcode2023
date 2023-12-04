@@ -61,7 +61,12 @@ fn get_first_and_last_digits_with_conversion(line: &str) -> i32 {
     combined_value.parse::<i32>().unwrap()
 }
 
-fn solve(inputs: Vec<&str>) -> () {
+fn load_input() -> Vec<String> {
+    let inputs = std::fs::read_to_string("../inputs/1.txt").unwrap();
+    inputs.split("\n").map(|s| s.to_owned()).collect()
+}
+
+fn solve(inputs: Vec<String>) -> () {
     let values: Vec<i32> = inputs
         .iter()
         .map(|x| get_first_and_last_digits_with_conversion(x))
@@ -71,14 +76,10 @@ fn solve(inputs: Vec<&str>) -> () {
 }
 
 fn run() {
-    // load the puzzle input
-    let inputs: String = std::fs::read_to_string("../inputs/1.txt").unwrap();
-    // convert to a vector of strings
-    let input_lines: Vec<&str> = inputs.split("\n").collect();
-    // solve the puzzle with a timer
-    timer! { solve(input_lines) };
+    let inputs: Vec<String> = timer! { "load_input", load_input() };
+    timer! { "solve", solve(inputs) };
 }
 
 fn main() {
-    run();
+    timer! { "run", run() };
 }

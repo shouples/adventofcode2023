@@ -66,18 +66,19 @@ fn load_input() -> Vec<String> {
     inputs.split("\n").map(|s| s.to_owned()).collect()
 }
 
-fn solve(inputs: Vec<String>) -> () {
+fn solve(inputs: Vec<String>) -> i32 {
     let values: Vec<i32> = inputs
         .iter()
         .map(|x| get_first_and_last_digits_with_conversion(x))
         .collect();
     let sum: i32 = values.iter().sum();
-    println!("{}", sum);
+    sum
 }
 
 fn run() {
     let inputs: Vec<String> = timer! { "load_input", load_input() };
-    timer! { "solve", solve(inputs) };
+    let solution: i32 = timer! { "solve", solve(inputs) };
+    dbg!(solution);
 }
 
 fn main() {

@@ -29,13 +29,13 @@ fn get_first_and_last_digits(input: &str) -> i32 {
     combined_value.parse::<i32>().unwrap()
 }
 
-fn solve(inputs: Vec<String>) -> () {
+fn solve(inputs: Vec<String>) -> i32 {
     let values: Vec<i32> = inputs
         .iter()
         .map(|x| get_first_and_last_digits(x))
         .collect();
     let sum: i32 = values.iter().sum();
-    println!("{}", sum);
+    sum
 }
 
 fn load_input() -> Vec<String> {
@@ -45,7 +45,8 @@ fn load_input() -> Vec<String> {
 
 fn run() {
     let inputs: Vec<String> = timer! { "load_input", load_input() };
-    timer! { "solve", solve(inputs) };
+    let solution: i32 = timer! { "solve", solve(inputs) };
+    dbg!(solution);
 }
 
 fn main() {

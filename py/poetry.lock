@@ -244,6 +244,19 @@ pycodestyle = ">=2.11.0,<2.12.0"
 pyflakes = ">=3.1.0,<3.2.0"
 
 [[package]]
+name = "intervaltree"
+version = "3.1.0"
+description = "Editable interval tree data structure for Python 2 and 3"
+optional = false
+python-versions = "*"
+files = [
+    {file = "intervaltree-3.1.0.tar.gz", hash = "sha256:902b1b88936918f9b2a19e0e5eb7ccb430ae45cde4f39ea4b36932920d33952d"},
+]
+
+[package.dependencies]
+sortedcontainers = ">=2.0,<3.0"
+
+[[package]]
 name = "ipykernel"
 version = "6.27.1"
 description = "IPython Kernel for Jupyter"
@@ -817,6 +830,17 @@ files = [
 ]
 
 [[package]]
+name = "sortedcontainers"
+version = "2.4.0"
+description = "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sortedcontainers-2.4.0-py2.py3-none-any.whl", hash = "sha256:a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0"},
+    {file = "sortedcontainers-2.4.0.tar.gz", hash = "sha256:25caa5a06cc30b6b83d11423433f65d1f9d76c4c6a0c90e3379eaa43b9bfdb88"},
+]
+
+[[package]]
 name = "stack-data"
 version = "0.6.3"
 description = "Extract data from python stack frames and tracebacks for informative displays"
@@ -895,4 +919,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "0a5b1ed60b7450dd8db8a418399caf9d3db1c19848ffbbf5da0a1f0246859d5c"
+content-hash = "673753656a81e9cbb2daf1cca141a5bf6a4bf09f8816f2ff5bae4d932eb7cca9"

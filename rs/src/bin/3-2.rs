@@ -31,10 +31,10 @@ fn get_gear_power(rows: Vec<String>) -> HashMap<(usize, usize), Vec<i32>> {
             let next_char_is_not_digit =
                 !row.chars().nth(char_index + 1).unwrap_or(' ').is_digit(10);
             if at_end_of_row || next_char_is_not_digit {
-                let above = i - 1;
-                let below = i + 1;
-                let left = char_index.saturating_sub(checking_number.len());
-                let right = usize::min(char_index + 1, last_char_position);
+                let above: usize = if i > 0 { i - 1 } else { 0 };
+                let below: usize = if i < last_row_position { i + 1 } else { i };
+                let left: usize = char_index.saturating_sub(checking_number.len());
+                let right: usize = usize::min(char_index + 1, last_char_position);
 
                 // check all around the current number, e.g.:
                 // xxxxx
@@ -124,4 +124,32 @@ fn run() {
 
 fn main() {
     timer! { "run", run() };
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_part_2() {
+        let inputs: Vec<String> = vec![
+            "467..114..",
+            "...*......",
+            "..35..633.",
+            "......#...",
+            "617*......",
+            ".....+.58.",
+            "..592.....",
+            "......755.",
+            "...$.*....",
+            ".664.598..",
+        ]
+        .iter()
+        .map(|&s| s.to_owned())
+        .collect();
+
+        let solution = solve(inputs);
+
+        assert_eq!(solution, 467835);
+    }
 }

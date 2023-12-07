@@ -21,7 +21,10 @@ jobs:
         override: true
 
     - name: Change directory to rs
-      run: cd rs
+      run: >
+        pwd
+        ls -lha
+        cd rs
 
     - name: Run tests
       run: cargo test

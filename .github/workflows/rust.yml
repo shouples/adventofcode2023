@@ -24,14 +24,11 @@ jobs:
         toolchain: stable
         override: true
 
-    - name: Print current working directory
-      run: pwd
+    - name: Change directory to rs
+      run: cd ./rs
 
     - name: List contents of the current directory
       run: ls -lha
-
-    - name: Change directory to rs
-      run: cd rs
 
     - name: Run tests
       run: cargo test

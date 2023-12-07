@@ -15,17 +15,21 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Rust
       uses: actions-rs/toolchain@v1
       with:
         toolchain: stable
         override: true
 
+    - name: Print current working directory
+      run: pwd
+  
+    - name: List contents of the current directory
+      run: ls -lha
+  
     - name: Change directory to rs
-      run: >
-        pwd
-        ls -lha
-        cd rs
+      run: cd rs
 
     - name: Run tests
       run: cargo test

@@ -84,3 +84,28 @@ fn run() {
 fn main() {
     timer! { "run", run() };
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_part_2() {
+        let inputs: Vec<String> = vec![
+            "two1nine",
+            "eightwothree",
+            "abcone2threexyz",
+            "xtwone3four",
+            "4nineeightseven2",
+            "zoneight234",
+            "7pqrstsixteen",
+        ]
+        .iter()
+        .map(|&s| s.to_owned())
+        .collect();
+
+        let solution = solve(inputs);
+
+        assert_eq!(solution, 281);
+    }
+}

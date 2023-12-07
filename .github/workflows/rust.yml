@@ -10,7 +10,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  test-rs:
+    name: Test Rust Solutions
+
     runs-on: ubuntu-latest
 
     steps:
@@ -24,10 +26,10 @@ jobs:
 
     - name: Print current working directory
       run: pwd
-  
+
     - name: List contents of the current directory
       run: ls -lha
-  
+
     - name: Change directory to rs
       run: cd rs
 

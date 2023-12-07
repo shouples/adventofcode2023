@@ -4,7 +4,12 @@ macro_rules! timer {
         let start = std::time::Instant::now();
         let result = $func_call;
         let duration = start.elapsed();
-        println!("`{}` time: {:.6} sec", $func_name, duration.as_secs_f64());
+        println!(
+            "`{}` time: {:?} ({:.8} sec)",
+            $func_name,
+            duration,
+            duration.as_secs_f64()
+        );
         result
     }};
 }

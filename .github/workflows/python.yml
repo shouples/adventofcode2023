@@ -27,9 +27,7 @@ jobs:
       run: pip install poetry
 
     - name: Install dependencies
-      run: poetry install
-      working-directory: ./py
+      run: cd ./py && poetry install
 
     - name: Run tests with `pytest`
-      run: poetry run pytest -v ./tests/*
-      working-directory: ./py
+      run: cd ./py && poetry run pytest -v ./tests/*

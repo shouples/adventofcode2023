@@ -1,0 +1,1 @@
+Rust solutions go here, to be run like `cargo run --bin 1-1 --release`.

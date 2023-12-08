@@ -102,7 +102,7 @@ def calculate_winnings(hands) -> int:
 @timer
 def solve(inputs: list[str]) -> int:
     """High-level solution logic to call additional functions as needed."""
-    hands = [CardHand(hand_data) for hand_data in inputs]
+    hands = sorted([CardHand(hand_data) for hand_data in inputs], key=lambda x: x.rank_score)
     return calculate_winnings(hands)
 
 

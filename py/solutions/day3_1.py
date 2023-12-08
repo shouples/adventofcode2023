@@ -1,6 +1,6 @@
 import string
 
-from utils import timer
+from solutions.utils import timer
 
 PART_SYMBOLS = {char for char in string.punctuation if char != "."}
 

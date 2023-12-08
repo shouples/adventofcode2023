@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from utils import timer
+from solutions.utils import timer
 
 GEAR_SYMBOL = "*"
 

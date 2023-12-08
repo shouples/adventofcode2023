@@ -1,4 +1,4 @@
-from utils import timer
+from solutions.utils import timer
 
 
 def calc_possible_acceleration(race_time: int, race_dist: int) -> int:

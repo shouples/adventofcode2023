@@ -1,4 +1,4 @@
-from utils import timer
+from solutions.utils import timer
 
 
 def get_first_and_last_digits(line: str) -> int:

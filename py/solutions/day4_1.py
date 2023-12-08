@@ -1,4 +1,4 @@
-from utils import timer
+from solutions.utils import timer
 
 
 class Card:

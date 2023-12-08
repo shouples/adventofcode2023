@@ -1,0 +1,35 @@
+name: Rust Test Workflow
+
+on:
+  push:
+    paths:
+      - 'py/**'
+  pull_request:
+    paths:
+      - 'py/**'
+  workflow_dispatch:
+
+jobs:
+  test-py:
+    name: Test Python Solutions
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install Poetry
+      run: pip install poetry
+
+    - name: Install dependencies
+      run: poetry install
+      working-directory: ./py
+
+    - name: Run tests with `pytest`
+      run: poetry run pytest -v ./tests/*
+      working-directory: ./py

@@ -32,19 +32,9 @@ jobs:
       run: poetry install
       working-directory: ./py
 
-    # DEBUGGING
-    - name: Print current directory
-      run: pwd
-      working-directory: ./py
-
-    - name: Print PYTHONPATH
-      run: echo $PYTHONPATH
-      working-directory: ./py
-
     - name: Add 'solutions' to PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)/solutions" >> $GITHUB_ENV
       working-directory: ./py
-    # /DEBUGGING
 
     - name: Run tests with `pytest`
       env:

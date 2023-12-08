@@ -24,7 +24,12 @@ jobs:
         toolchain: stable
         override: true
 
+    - name: Install `cargo-nextest`
+      run: curl -LsSf https://get.nexte.st/latest/linux | tar zxf - -C ${CARGO_HOME:-~/.cargo}/bin
+      working-directory: ./rs
+
     - name: Run `cargo test`
       env:
         CARGO_TERM_COLOR: always
-      run: cd ./rs && cargo test
+      run: cargo nextest run
+      working-directory: ./rs

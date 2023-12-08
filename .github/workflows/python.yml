@@ -1,4 +1,4 @@
-name: Rust Test Workflow
+name: Python Test Workflow
 
 on:
   push:

@@ -47,5 +47,7 @@ jobs:
     # /DEBUGGING
 
     - name: Run tests with `pytest`
+      env:
+        PYTEST_ADDOPTS: "--color=yes"
       run: poetry run pytest -v ./tests/*
       working-directory: ./py

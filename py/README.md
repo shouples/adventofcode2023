@@ -1,0 +1,1 @@
+Python notebooks go here, day- and part-specific answers without all the print statements go in `solutions/`, to be run like `poetry run ./solutions/day1_1.py`.

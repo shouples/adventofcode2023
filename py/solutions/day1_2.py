@@ -55,10 +55,9 @@ def get_first_and_last_digits_with_conversion(line: str) -> int:
 
 
 @timer
-def solve(inputs: list[str]) -> None:
+def solve(inputs: list[str]) -> int:
     values: list[int] = [get_first_and_last_digits_with_conversion(line) for line in inputs]
-    solution = sum(values)
-    print(f"{solution=}")
+    return sum(values)
 
 
 @timer
@@ -69,7 +68,8 @@ def load_input() -> list[str]:
 @timer
 def run() -> None:
     inputs: list[str] = load_input()
-    solve(inputs)
+    solution: int = solve(inputs)
+    print(f"{solution=}")
 
 
 if __name__ == "__main__":

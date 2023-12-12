@@ -96,7 +96,7 @@ class CardHandWithJokers:
         return hand_score
 
     def __repr__(self) -> str:
-        return f"<CardHand {self.raw_cards}: {self.rank} (score={self.rank_score})>"
+        return f"<CardHandWithJokers {self.raw_cards}: {self.rank} (score={self.rank_score})>"
 
     def __eq__(self, other: "CardHandWithJokers") -> bool:
         return self.cards == other.cards

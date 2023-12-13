@@ -125,7 +125,6 @@ class PipeMap:
 class MapPositionRunner:
     def __init__(self, map_str: str):
         self.pipe_map = PipeMap(map_str)
-        self.traveled_positions = []
 
     @property
     def map_data(self) -> list[list[MapPosition]]:
@@ -143,19 +142,6 @@ class MapPositionRunner:
         for row in self.map_data:
             for pos in row:
                 map_repr += repr(pos)
-            map_repr += "\n"
-        return map_repr
-
-    @property
-    def traveled_loop(self) -> str:
-        map_repr = ""
-        for row in self.map_data:
-            for pos in row:
-                pos_repr = pos
-                if pos in self.traveled_positions:
-                    # highlight red
-                    pos_repr = f"\033[91m{pos_repr}\033[0m"
-                map_repr += f"{pos_repr}"
             map_repr += "\n"
         return map_repr
 
@@ -199,13 +185,10 @@ class MapPositionRunner:
         return moves
 
     def travel_loop(self) -> int:
-        self.traveled_positions = []
-
         n_moves = 0
         last_position = None
         current_position = self.starting_position
         while True:
-            self.traveled_positions.append(current_position)
             moves = [
                 m
                 for m in self.available_moves(current_position)

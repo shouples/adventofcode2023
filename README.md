@@ -28,7 +28,7 @@ For the non-notebook sections, tests (`pytest` and `cargo nextest`) are be inclu
 | 7   | ✅✅  | ✅✅  | ✅✅ | I haven't had to deal with rust's `Display` impl for custom `fmt` until now, but it helped debugging quite a bit here; it wasn't as clean/straightforward as python's `__repr__` method, but still useful to play with. |
 | 8   | ✅🕒  | ✅🕒  | 🕒🕒 | Initially abandoned part 2, but I think I was on the right track (not brute-forcing) and want to revisit it. |
 | 9   | ✅✅  | ✅✅  | ✅✅ | |
-| 10   | ✅⛔  | ✅⛔ | 🕒⛔ | |
+| 10   | ✅⛔  | ✅⛔ | ✅⛔ | |
 | 11   | ✅✅  | 🕒🕒 | 🕒🕒 | |
 | 12   | 🕒🕒  | 🕒🕒  | 🕒🕒 | |
 | 13   | 🕒🕒  | 🕒🕒  | 🕒🕒 | |

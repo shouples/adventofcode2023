@@ -10,7 +10,7 @@ Progress so far:
 | 5   | ✅⛔  | ✅⛔ | I'm having a hard time wrapping my head around what part 2 is asking, even after seeing some visualizations. |
 | 6   | ✅✅  | ✅✅ | |
 | 7   | ✅✅  | ✅✅ | |
-| 8   | ✅🕒  | 🕒🕒 | |
+| 8   | ✅🕒  | 🕒🕒 | Initially abandoned part 2, but I think I was on the right track (not brute-forcing) and want to revisit it. |
 | 9   | ✅✅  | ✅✅ | |
 | 10   | ✅⛔  | 🕒⛔ | |
 | 11   | ✅✅  | 🕒🕒 | |

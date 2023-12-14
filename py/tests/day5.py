@@ -41,6 +41,4 @@ humidity-to-location map:
     assert day5_1.solve(inputs) == 35
 
 
-def test_part2():
-    # admitted defeat, no solution here 😢
-    pass
+# admitted defeat, no part 2 solution to test here 😢

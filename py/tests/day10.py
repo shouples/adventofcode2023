@@ -19,6 +19,4 @@ LJ..."""
     assert day10_1.solve(input_str2) == 8
 
 
-def test_part2():
-    # admitted defeat, no solution here 😢
-    pass
+# admitted defeat, no part 2 solution to test here 😢

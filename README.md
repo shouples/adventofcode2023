@@ -30,7 +30,7 @@ For the non-notebook sections, tests (`pytest` and `cargo nextest`) are be inclu
 | 9   | ✅✅  | ✅✅  | ✅✅ | |
 | 10   | ✅⛔  | ✅⛔ | ✅⛔ | |
 | 11   | ✅✅  | 🕒🕒 | 🕒🕒 | |
-| 12   | 🕒🕒  | 🕒🕒  | 🕒🕒 | |
+| 12   | ✅⛔  | ✅⛔  | 🕒🕒 | Getting pretty tired of the "do part 1 but with way more data" trend here. |
 | 13   | 🕒🕒  | 🕒🕒  | 🕒🕒 | |
 | 14   | ❔❔  | ❔❔ | |
 | 15   | ❔❔  | ❔❔ | |

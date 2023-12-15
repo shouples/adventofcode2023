@@ -31,18 +31,18 @@ For the non-notebook sections, tests (`pytest` and `cargo nextest`) are be inclu
 | 10   | ✅⛔  | ✅⛔ | ✅⛔ | |
 | 11   | ✅✅  | 🕒🕒 | 🕒🕒 | |
 | 12   | ✅⛔  | ✅⛔  | 🕒🕒 | Getting pretty tired of the "do part 1 but with way more data" trend here. |
-| 13   | 🕒🕒  | 🕒🕒  | 🕒🕒 | |
-| 14   | ❔❔  | ❔❔ | |
-| 15   | ❔❔  | ❔❔ | |
-| 16   | ❔❔  | ❔❔ | |
-| 17   | ❔❔  | ❔❔ | |
-| 18   | ❔❔  | ❔❔ | |
-| 19   | ❔❔  | ❔❔ | |
-| 20   | ❔❔  | ❔❔ | |
-| 21   | ❔❔  | ❔❔ | |
-| 22   | ❔❔  | ❔❔ | |
-| 23   | ❔❔  | ❔❔ | |
-| 24   | ❔❔  | ❔❔ | |
-| 25   | ❔❔  | ❔❔ | |
+| 13   | ✅⛔  | 🕒🕒  | 🕒🕒 | Multiple examples were working in part 2, but something isn't quite working correctly on the actual inputs. |
+| 14   | ✅🕒  | 🕒🕒 | 🕒🕒 | |
+| 15   | ✅✅  | ✅✅ | ❔❔ | This was a nice little break compared to the past week's puzzle offerings. |
+| 16   | ❔❔  | ❔❔ | ❔❔ | |
+| 17   | ❔❔  | ❔❔ | ❔❔ | |
+| 18   | ❔❔  | ❔❔ | ❔❔ | |
+| 19   | ❔❔  | ❔❔ | ❔❔ | |
+| 20   | ❔❔  | ❔❔ | ❔❔ | |
+| 21   | ❔❔  | ❔❔ | ❔❔ | |
+| 22   | ❔❔  | ❔❔ | ❔❔ | |
+| 23   | ❔❔  | ❔❔ | ❔❔ | |
+| 24   | ❔❔  | ❔❔ | ❔❔ | |
+| 25   | ❔❔  | ❔❔ | ❔❔ | |
 
 _*I'm starting with Python each day, and using this year as a way to become generally more comfortable with Rust. Maybe I'll start puzzles in Rust next year!_

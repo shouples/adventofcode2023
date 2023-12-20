@@ -1,0 +1,19 @@
+{
+    "name": "Advent of Code 2023: Python & Rust",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "rust-lang.rust-analyzer"
+            ],
+            "settings": {
+                "python.pythonPath": "./py",
+                "rust-analyzer.cargo.home": "./rs"
+            }
+        }
+    },
+    "postCreateCommand": "cd ./py && poetry install"
+}

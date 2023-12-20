@@ -12,8 +12,8 @@ ENV PYTHON_VERSION=3.11.5
 RUN pyenv install ${PYTHON_VERSION} && pyenv global ${PYTHON_VERSION}
 
 # allow pyenv to install python versions
-RUN chown -R codespace:codespace $PYENV_ROOT
-USER codespace
+RUN chown -R "$USER:$USER" $PYENV_ROOT
+USER $USER
 
 # poetry installation and setup
 # hadolint ignore=DL3013

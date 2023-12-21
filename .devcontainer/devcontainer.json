@@ -1,8 +1,6 @@
 {
     "name": "Advent of Code 2023: Python & Rust",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
+    "image": "shouples/devcontainer-pyrust:dev",
     "customizations": {
         "vscode": {
             "extensions": [

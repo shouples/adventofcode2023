@@ -41,9 +41,7 @@ def find_galaxies(universe_df: pd.DataFrame) -> list[tuple[int, int]]:
     return galaxies
 
 
-def get_shortest_distance_between_galaxies(
-    universe_df: pd.DataFrame, galaxy_locations: list[tuple[int, int]]
-) -> int:
+def get_shortest_distance_between_galaxies(galaxy_locations: list[tuple[int, int]]) -> int:
     shortest_distances = {}
     for i, (x1, y1) in enumerate(galaxy_locations):
         for j, (x2, y2) in enumerate(galaxy_locations):
@@ -64,7 +62,7 @@ def solve(inputs: str) -> int:
     """High-level solution logic to call additional functions as needed."""
     universe: pd.DataFrame = generate_universe(inputs)
     galaxies: list[tuple[int, int]] = find_galaxies(universe)
-    shortest_distances: int = get_shortest_distance_between_galaxies(universe, galaxies)
+    shortest_distances: int = get_shortest_distance_between_galaxies(galaxies)
     return sum(shortest_distances.values())
 
 

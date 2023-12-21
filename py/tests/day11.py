@@ -12,7 +12,8 @@ def test_part1():
 ..........
 .......#..
 #...#....."""
-    assert day11_1.solve(input_str) == 374
+    solution = day11_1.solve(input_str)
+    assert solution == 374, solution
 
 
 def test_part2():
@@ -26,5 +27,9 @@ def test_part2():
 ..........
 .......#..
 #...#....."""
-    assert day11_2.solve(input_str, 9) == 1030
-    assert day11_2.solve(input_str, 99) == 8410
+    # first example, galaxy scaling of 10x
+    solution1 = day11_2.solve(input_str, 9)
+    assert solution1 == 1030, solution1
+    # second example, galaxy scaling of 100x
+    solution2 = day11_2.solve(input_str, 99)
+    assert solution2 == 8410, solution2

@@ -1,3 +1,4 @@
+import pytest
 from solutions import day10_1
 
 
@@ -19,4 +20,6 @@ LJ..."""
     assert day10_1.solve(input_str2) == 8
 
 
-# admitted defeat, no part 2 solution to test here 😢
+@pytest.mark.skip(reason="admitted defeat, no part 2 solution to test here 😢")
+def test_part2():
+    pass

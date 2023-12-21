@@ -1,3 +1,4 @@
+import pytest
 from solutions import day5_1
 
 
@@ -41,4 +42,6 @@ humidity-to-location map:
     assert day5_1.solve(inputs) == 35
 
 
-# admitted defeat, no part 2 solution to test here 😢
+@pytest.mark.skip(reason="admitted defeat, no part 2 solution to test here 😢")
+def test_part2():
+    pass

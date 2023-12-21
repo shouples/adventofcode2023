@@ -1,3 +1,4 @@
+import pytest
 from solutions import day8_1
 
 
@@ -29,6 +30,6 @@ ZZZ = (ZZZ, ZZZ)"""
     assert day8_1.solve(directions2, branches2) == 6
 
 
+@pytest.mark.skip(reason="admitted defeat, no part 2 solution to test here 😢")
 def test_part2():
-    # admitted defeat, no solution here 😢
     pass

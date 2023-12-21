@@ -42,6 +42,6 @@ humidity-to-location map:
     assert day5_1.solve(inputs) == 35
 
 
-@pytest.mark.skip(reason="admitted defeat, no part 2 solution to test here 😢")
+@pytest.mark.skip(reason="admitted defeat 😢")
 def test_part2():
     pass

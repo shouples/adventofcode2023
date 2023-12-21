@@ -30,6 +30,6 @@ ZZZ = (ZZZ, ZZZ)"""
     assert day8_1.solve(directions2, branches2) == 6
 
 
-@pytest.mark.skip(reason="admitted defeat, no part 2 solution to test here 😢")
+@pytest.mark.skip(reason="admitted defeat 😢")
 def test_part2():
     pass

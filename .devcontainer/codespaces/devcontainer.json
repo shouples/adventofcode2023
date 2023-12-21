@@ -1,6 +1,7 @@
 {
     "name": "Advent of Code 2023: Python & Rust",
     "image": "shouples/devcontainer-pyrust:dev",
+    "initializeCommand": "docker system prune --all --force",
     "customizations": {
         "vscode": {
             "extensions": [

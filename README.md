@@ -36,7 +36,7 @@ For the non-notebook sections, tests (`pytest` and `cargo nextest`) are be inclu
 | 15   | ✅✅  | ✅✅ | 🕒🕒 | This was a nice little break compared to the past week's puzzle offerings. |
 | 16   | ✅✅  | 🕒🕒 | 🕒🕒 | |
 | 17   | ✅⛔  | 🕒🕒 | 🕒🕒 | Same issue as day 13 with part 2 here. |
-| 18   | 🕒🕒  | 🕒🕒 | 🕒🕒 | |
+| 18   | ✅✅  | ✅✅ | 🕒🕒 | |
 | 19   | 🕒🕒  | 🕒🕒 | 🕒🕒 | |
 | 20   | 🕒🕒  | 🕒🕒 | 🕒🕒 | |
 | 21   | 🕒🕒  | 🕒🕒 | 🕒🕒 | |

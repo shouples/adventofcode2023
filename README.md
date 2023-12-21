@@ -29,7 +29,7 @@ For the non-notebook sections, tests (`pytest` and `cargo nextest`) are be inclu
 | 8   | ✅🕒  | ✅🕒  | 🕒🕒 | Initially abandoned part 2, but I think I was on the right track (not brute-forcing) and want to revisit it. |
 | 9   | ✅✅  | ✅✅  | ✅✅ | |
 | 10   | ✅⛔  | ✅⛔ | ✅⛔ | |
-| 11   | ✅✅  | 🕒🕒 | 🕒🕒 | |
+| 11   | ✅✅  | ✅✅ | 🕒🕒 | |
 | 12   | ✅⛔  | ✅⛔  | 🕒🕒 | Getting pretty tired of the "do part 1 but with way more data" trend here. |
 | 13   | ✅⛔  | 🕒🕒  | 🕒🕒 | Multiple examples were working in part 2, but something isn't quite working correctly on the actual inputs. |
 | 14   | ✅🕒  | 🕒🕒 | 🕒🕒 | |

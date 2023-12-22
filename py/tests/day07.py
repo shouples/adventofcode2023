@@ -1,4 +1,4 @@
-from py.solutions import day07_1, day07_2
+from solutions import day07_1, day07_2
 
 
 def test_part1():

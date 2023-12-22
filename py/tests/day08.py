@@ -1,6 +1,5 @@
 import pytest
-
-from py.solutions import day08_1
+from solutions import day08_1
 
 
 def test_part1():

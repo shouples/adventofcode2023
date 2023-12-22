@@ -1,11 +1,21 @@
 import pytest
+from solutions import day14_1
 
 
-@pytest.mark.skip(reason="TODO")
 def test_part1():
-    pass
+    input_str = """OOOO.#.O..
+OO..#....#
+OO..O##..O
+O..#.OO...
+........#.
+..#....#.#
+..O..#.O.O
+..O.......
+#....###..
+#....#...."""
+    assert day14_1.solve(input_str) == 136
 
 
-@pytest.mark.skip(reason="TODO")
+@pytest.mark.skip(reason="admitted defeat 😢")
 def test_part2():
     pass

@@ -1,11 +1,49 @@
-import pytest
+from solutions import day17_1, day17_2
 
 
-@pytest.mark.skip(reason="TODO")
 def test_part1():
-    pass
+    input_str = """
+2413432311323
+3215453535623
+3255245654254
+3446585845452
+4546657867536
+1438598798454
+4457876987766
+3637877979653
+4654967986887
+4564679986453
+1224686865563
+2546548887735
+4322674655533""".strip()
+    solution = day17_1.solve(input_str)
+    assert solution == 102, solution
 
 
-@pytest.mark.skip(reason="TODO")
 def test_part2():
-    pass
+    # pretty annoying that the tests work fine here, but the solution doesn't work for the real input
+    input_str = """
+2413432311323
+3215453535623
+3255245654254
+3446585845452
+4546657867536
+1438598798454
+4457876987766
+3637877979653
+4654967986887
+4564679986453
+1224686865563
+2546548887735
+4322674655533""".strip()
+    solution = day17_2.solve(input_str)
+    assert solution == 94, solution
+
+    input_str2 = """
+111111111111
+999999999991
+999999999991
+999999999991
+999999999991""".strip()
+    solution2 = day17_2.solve(input_str2)
+    assert solution2 == 71, solution2

@@ -34,7 +34,7 @@ For the non-notebook sections, tests (`pytest` and `cargo nextest`) are be inclu
 | 13   | ✅⛔  | ✅⛔  | 🕒🕒 | Multiple examples were working in part 2, but something isn't quite working correctly on the actual inputs. |
 | 14   | ✅⛔  | ✅⛔ | 🕒🕒 | |
 | 15   | ✅✅  | ✅✅ | 🕒🕒 | This was a nice little break compared to the past week's puzzle offerings. |
-| 16   | ✅✅  | 🕒🕒 | 🕒🕒 | |
+| 16   | ✅✅  | ✅✅ | 🕒🕒 | |
 | 17   | ✅⛔  | 🕒🕒 | 🕒🕒 | Same issue as day 13 with part 2 here. |
 | 18   | ✅✅  | ✅✅ | 🕒🕒 | |
 | 19   | ✅⛔  | ✅⛔ | 🕒🕒 | |

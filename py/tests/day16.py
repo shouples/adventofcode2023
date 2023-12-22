@@ -1,11 +1,13 @@
-import pytest
+from solutions import day16_1, day16_2
 
 
-@pytest.mark.skip(reason="TODO")
 def test_part1():
-    pass
+    input_str = open("../inputs/16_test.txt").read()
+    solution = day16_1.solve(input_str)
+    assert solution == 46, solution
 
 
-@pytest.mark.skip(reason="TODO")
 def test_part2():
-    pass
+    input_str = open("../inputs/16_test.txt").read()
+    solution = day16_2.solve(input_str)
+    assert solution == 51, solution

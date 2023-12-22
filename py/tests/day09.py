@@ -1,4 +1,4 @@
-from solutions import day9_1, day9_2
+from py.solutions import day09_1, day09_2
 
 
 def test_part1():
@@ -11,7 +11,7 @@ def test_part1():
         line_readings = [int(reading) for reading in line.split()]
         readings.append(line_readings)
 
-    assert day9_1.solve(readings) == 114
+    assert day09_1.solve(readings) == 114
 
 
 def test_part2():
@@ -24,4 +24,4 @@ def test_part2():
         line_readings = [int(reading) for reading in line.split()]
         readings.append(line_readings)
 
-    assert day9_2.solve(readings) == 2
+    assert day09_2.solve(readings) == 2

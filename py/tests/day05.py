@@ -1,5 +1,5 @@
 import pytest
-from solutions import day5_1
+from solutions import day05_1
 
 
 def test_part1():
@@ -39,7 +39,7 @@ humidity-to-location map:
         "\n\n"
     )
 
-    assert day5_1.solve(inputs) == 35
+    assert day05_1.solve(inputs) == 35
 
 
 @pytest.mark.skip(reason="admitted defeat 😢")

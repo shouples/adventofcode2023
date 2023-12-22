@@ -1,4 +1,4 @@
-from solutions import day3_1, day3_2
+from solutions import day03_1, day03_2
 
 
 def test_part1():
@@ -13,7 +13,7 @@ def test_part1():
 ...$.*....
 .664.598..""".splitlines()
 
-    assert day3_1.solve(inputs) == 4361
+    assert day03_1.solve(inputs) == 4361
 
 
 def test_part2():
@@ -28,4 +28,4 @@ def test_part2():
 ...$.*....
 .664.598..""".splitlines()
 
-    assert day3_2.solve(inputs) == 467835
+    assert day03_2.solve(inputs) == 467835

@@ -40,7 +40,7 @@ For the non-notebook sections, tests (`pytest` and `cargo nextest`) are be inclu
 | 19   | ✅⛔  | ✅⛔ | 🕒🕒 | |
 | 20   | 🕒🕒  | 🕒🕒 | 🕒🕒 | |
 | 21   | 🕒🕒  | 🕒🕒 | 🕒🕒 | |
-| 22   | 🕒🕒  | 🕒🕒 | 🕒🕒 | |
+| 22   | ⛔⛔  | ⛔⛔ | ⛔⛔ | Example passed, real input kept being flagged as too high. |
 | 23   | ❔❔  | ❔❔ | ❔❔ | |
 | 24   | ❔❔  | ❔❔ | ❔❔ | |
 | 25   | ❔❔  | ❔❔ | ❔❔ | |
